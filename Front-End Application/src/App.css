@@ -1,0 +1,87 @@
+.App {
+  text-align: center;
+  margin: 0;
+  border: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header{
+  padding: 8px;
+  background-color:midnightblue;
+  color: aliceblue;
+  border-bottom: 5px solid orangered;
+  margin-bottom: 10px;
+}
+.header a{
+  text-decoration: none;
+  color:aliceblue;
+}
+.header a:hover{
+  background-color: mintcream;
+  color: orangered;
+  padding: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.chart{
+  margin-top: 85px;
+  margin-left: 350px;
+  max-width: 800px;
+  max-height: 1000px;
+}
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  margin-top: 85px;
+  margin-left: 350px;
+  width: 800px;
+  margin-right: 25px;
+}
+
+table td, table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+table tr:hover {background-color: #ddd;}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color:royalblue;
+  color: white;
+}
+table td{
+  padding: 25px;
+}
+
+.home{
+  margin-top: 100px;
+}
+.home select{
+  padding: 15px;
+  width: 300px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: monospace;
+}
+.home button{
+  background-color:navy;
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+  margin-top: 30px;
+  width: 300px;
+  font-size: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 3px solid saddlebrown;
+}
+.tabular h3{
+  margin-top: 50px;
+  margin-bottom: -35px;
+}
+.nav{
+  margin-bottom: 15px;
+}

@@ -41,5 +41,22 @@ public class HomeController {
         Sensor sensor = sensorService.getOneSensor(id);
         return sensor.getName();
     }
+    
+    @GetMapping("/notify")
+    public void sendNotification(){
+        Reading reading = readingService.getLastReading();
+        Sensor sensor = sensorService.getOneSensor(reading.getSensor());
+        if(reading.getTemperature() > sensor.getThreshold()){
+            System.out.println("Data Read from "+sensor.getName());
+            System.out.println("Threashold value of "+sensor.getName()+" = "+sensor.getThreshold());
+            System.out.println("High temperature read than thresold value in "+sensor.getName());
+            alertService.addAlert(new Alert(reading.getSensor(),reading.getDate(),reading.getTemperature()));
+        }
+    }
+
+    @GetMapping("/alerts")
+    public List<Alert> getNotifications(){
+        return alertService.getAlerts();
+    }
 
 }
